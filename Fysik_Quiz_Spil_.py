@@ -223,7 +223,7 @@ class QuizApp:
         self.ql = tk.Label(self.frm, text="")
         self.ql.grid(row=0, column=0, columnspan=2, sticky="ew")
 
-        self.answer_buttons = [tk.Button(self.frm) for _ in range(4)]
+        self.answer_buttons = [ttk.Button(self.frm) for _ in range(4)]
         for i, button in enumerate(self.answer_buttons):
             button.grid(row=1 + i // 2, column=i % 2, sticky="ew")
 
@@ -266,9 +266,8 @@ class QuizApp:
             self.incorrect_answers += 1
             
             if self.mode == "Hardcore":
-                self.bs.config(background ='red', foreground='white')
-                self.after(1000, lambda: self.endQuiz(f"Game over! Din score: {self.score}"))
-                return
+                self.root.after(1000, lambda: self.endQuiz(f"Game over! Din score: {self.score}"))
+            return   
 
         self.generateQuestionAndAnswers()
 
