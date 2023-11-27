@@ -13,6 +13,8 @@ I koden begyndte vi først at designe vores UI, hvor vi designede og tilføjede 
 Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og svar under vores data-sæt (dictionary).
 
 ## 4. Beskrivelse af brugergrænsefladen.
+Flowdiagrammet nedenfor illustrerer brugergrænsefladen. Start/slut-punkterne er markeret med lilla cirkler. Brugerens valgmuligheder er repræsenteret af blå diamanter, hvor brugeren kan interagere ved at klikke på de knapper, der er angivet ved siden af med pile, som viser hvor de fører hentil. Den grønne proces er skjult for forbrugeren og anvendes til at illustrere, hvordan forskellige svarresultater genereres, afhængigt af om de er rigtige eller forkerte. Brugeren har mulighed for at afslutte programmet når som helst ved at bruge 'Alt+F4' eller lukkeknappen i øverste højre hjørne, hvis de foretrækker det frem for appens indbyggede afslutningsknap.
+
 ```mermaid
 graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
@@ -21,12 +23,12 @@ graph LR
     style C fill:#9cf,stroke:#333,stroke-width:2px
     style E fill:#9cf,stroke:#333,stroke-width:2px
     style F fill:#9cf,stroke:#333,stroke-width:2px
-    style G fill:#ff9,stroke:#333,stroke-width:2px
+    style G fill:#6f6,stroke:#333,stroke-width:2px
     style H fill:#9cf,stroke:#333,stroke-width:2px
 
     A((Start)) --> B{Hovedmenu}
     B --> |Start| C{Emnevalg}
-    B --> |Quit| D((End)) 
+    B --> |Quit| D((Slut)) 
     C --> |SI-Enheder| E{Spilmode}
     C --> |SI-Præfikser| E
     C --> |Tilbage| B
