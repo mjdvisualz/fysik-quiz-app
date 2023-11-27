@@ -16,10 +16,14 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ```mermaid
 graph LR
     A((Start)) --> B{Decision}
-    B -->|Yes| C[Do Something]
-    B -->|No| D[Do Something Else]
-    C --> E((End))
-    D --> E
+    B -->|Start| C[Do Something]
+    B -->|Quiz| D[Quizzen afsluttes]
+    C --> E{Decision}
+    D --> F((End))
+    E --> G[SI-Enheder]
+    E --> H[SI-Præfikser]
+    E --> I[Tilbage]
+
 ```
 
 ## 5. Et skema med test.
