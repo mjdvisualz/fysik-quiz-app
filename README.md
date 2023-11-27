@@ -17,7 +17,7 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 graph LR
     A((Start)) --> B{Hovedmenu}
     B -->|Start| C{Emnevalg}
-    B -->|Quiz| D[Quizzen afsluttes]
+    B -->|Quit| D[Quizzen afsluttes]
     D --> E((End))
     C --> |SI-Enheder| F{Spilmode}
     C --> |SI-Præfikser| F
