@@ -15,9 +15,8 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ## 4. Beskrivelse af brugergrænsefladen.
 
 ## 5. Et skema med test.
-| Syntax | Description | 
-| ----------- | ----------- | 
-| Header | Title |
-| Paragraph | Text | 
+| Titel | Test trin | Forventet resultat | Aktuelle resultat | 
+| ----------- | ----------- | ----------- | ----------- | 
+| Initialisering af quiz App | Lav en instans af quiz appen | Hovedmenuen med en 'start' og 'quit' knap vises| Resultat |
 
 ## 6. Reflektion over brugen af deisgn pattern
