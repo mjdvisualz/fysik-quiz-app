@@ -18,7 +18,7 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 | Titel | Test trin | Forventet resultat | Aktuelle resultat | 
 | ----------- | ----------- | ----------- | ----------- | 
 | Initialisering af quiz App | 1. Lav en instans af quiz appen | Hovedmenuen med en 'start' og 'quit' knap vises| Resultat |
-| Initialisering af emnevalg | 1. Lav en instans af quiz appen 2. Klik på knappen 'start' | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Resultat |
+| Initialisering af emnevalg | 1. Lav en instans af quiz appen <br> 2. Klik på knappen 'start' | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | Lav en instans af quiz appen | Hovedmenuen med en 'start' og 'quit' knap vises| Resultat |
 
 ## 6. Reflektion over brugen af deisgn pattern
