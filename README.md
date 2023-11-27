@@ -15,7 +15,7 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ## 4. Beskrivelse af brugergrænsefladen.
 
 ## 5. Et skema med test.
-| Titel | Test trin | Forventet resultat | Aktuelle resultat | 
+| Titel | Test trin | Forventet resultat | Aktuelle resultat | hello world |
 | ----------- | ----------- | ----------- | ----------- | 
 | Initialisering af quiz App | <ol> <li> Lav en instans af quiz appen </li> </ol> | Hovedmenuen med en 'start' og 'quit' knap vises | Resultat |
 | Initialisering af emnevalg | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> </ol> | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Resultat |
