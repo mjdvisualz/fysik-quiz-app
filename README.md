@@ -17,11 +17,11 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#ff9,stroke:#333,stroke-width:2px
+    style B fill:#9cf,stroke:#333,stroke-width:2px
     style C fill:#9cf,stroke:#333,stroke-width:2px
     style D fill:#f96,stroke:#333,stroke-width:2px
     style F fill:#9cf,stroke:#333,stroke-width:2px
-    style G fill:#9cf,stroke:#333,stroke-width:2px
+    style G fill:#ff9,stroke:#333,stroke-width:2px
     style H fill:#9cf,stroke:#333,stroke-width:2px
     style I fill:#9cf,stroke:#333,stroke-width:2px
 
