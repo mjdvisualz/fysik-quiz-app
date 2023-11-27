@@ -22,6 +22,9 @@ graph LR
     C --> |SI-Enheder| F{Spilmode}
     C --> |SI-Præfikser| F
     C --> |Tilbage| B
+    F --> |Uendelig| G
+    F --> |Hardcore| G
+    F --> |Tilbage| C
 
 ```
 
