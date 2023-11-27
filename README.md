@@ -15,10 +15,10 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ## 4. Beskrivelse af brugergrænsefladen.
 ```mermaid
 graph LR
-    A(>Start) --> B{Decision}
+    A(<Start) --> B{Decision}
     B -->|Yes| C[Do Something]
     B -->|No| D[Do Something Else]
-    C --> E(>End)
+    C --> E(<End)
     D --> E
 ```
 
@@ -30,10 +30,10 @@ graph LR
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
 | Initialisering af quizzen | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> <li> Klik på enten 'Uendelig' eller 'Hardcore' </li> </ol> | Quizzen vises, med et spørgsmål øverst, under er 4 knapper med svar muligheder og nederst er en 'tjek svar' knap. Under står din score. Hvis du har valgt spilmoden 'uendelig' er der en knap 'afslut quiz' | Resultat |
-| Ved rigtigt svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Forventet | Resultat |
-| Ved forkert svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Forventet | Resultat |
-| Ved rigtigt svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Forventet | Resultat |
-| Ved forkert svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Forventet | Resultat |
-
+| Ved rigtigt svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Tjek svar knappen bliver grøn, der bliver tilføjet adderet 1 til din score, og der kommer et nyt spørgsmål og svar muligheder | Resultat |
+| Ved forkert svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og der kommer et nyt spørgsmål og svar muligheder | Resultat |
+| Ved rigtigt svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Tjek svar knappen bliver grøn, der bliver tilføjet adderet 1 til din score og der kommer et nyt spørgsmål og svar muligheder | Resultat |
+| Ved forkert svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og efterfølgende vises dit resultat, med en knap 'tilbage til menu'| Resultat |
+| Ved klik på tilbage til hovedmenu | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og efterfølgende vises dit resultat, med en knap 'tilbage til menu'| Resultat |
 
 ## 6. Reflektion over brugen af deisgn pattern
