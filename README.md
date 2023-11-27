@@ -15,10 +15,10 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ## 4. Beskrivelse af brugergrænsefladen.
 ```mermaid
 graph LR
-    A(<Start) --> B{Decision}
+    A(>Start) --> B{Decision}
     B -->|Yes| C[Do Something]
     B -->|No| D[Do Something Else]
-    C --> E(<End)
+    C --> E(>End)
     D --> E
 ```
 
