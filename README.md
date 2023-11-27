@@ -13,6 +13,14 @@ I koden begyndte vi først at designe vores UI, hvor vi designede og tilføjede 
 Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og svar under vores data-sæt (dictionary).
 
 ## 4. Beskrivelse af brugergrænsefladen.
+```mermaid
+graph LR
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Do Something]
+    B -->|No| D[Do Something Else]
+    C --> E[End]
+    D --> E
+```
 
 ## 5. Et skema med test.
 | Titel | Test trin | Forventet resultat | Aktuelle resultat |
