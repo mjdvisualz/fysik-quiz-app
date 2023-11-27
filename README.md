@@ -30,10 +30,10 @@ graph LR
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
 | Initialisering af quizzen | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> <li> Klik på enten 'Uendelig' eller 'Hardcore' </li> </ol> | Quizzen vises, med et spørgsmål øverst, under er 4 knapper med svar muligheder og nederst er en 'tjek svar' knap. Under står din score. Hvis du har valgt spilmoden 'uendelig' er der en knap 'afslut quiz' | Resultat |
-| Ved rigtigt svar i uendelig spilmode | Path | Forventet | Resultat |
-| Ved forkert svar i uendelig spilmode | Path | Forventet | Resultat |
-| Ved rigtigt svar i hardcore spilmode | Path | Forventet | Resultat |
-| Ved forkert svar i hardcore spilmode | Path | Forventet | Resultat |
+| Ved rigtigt svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Forventet | Resultat |
+| Ved forkert svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Forventet | Resultat |
+| Ved rigtigt svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Forventet | Resultat |
+| Ved forkert svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Forventet | Resultat |
 
 
 ## 6. Reflektion over brugen af deisgn pattern
