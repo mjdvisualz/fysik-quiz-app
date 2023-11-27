@@ -6,7 +6,7 @@ Formålet med denne applikation er at tilbyde gymnasieelever en nem og tilgænge
 Vi har valgt at benytte os af Command-mønstret, som er en del af de adfærdsmæssige designmønstre. Dette mønster er særligt effektivt til at håndtere funktionskald og operationer, hvilket gør det ideelt til en app, der kræver interaktivitet og responsivitet. Ved at anvende dette mønster, har vi øget appens modulære natur og gjort det lettere at vedligeholde og udvide funktionaliteten over tid.
 Læs mere om mønstret her: https://refactoring.guru/design-patterns/command
 
-Klassediagrammet nedenfor illustere Command-mønstret
+Klassediagrammet nedenfor illustere Command-mønstret:
 ```mermaid
 classDiagram
     class Command {
@@ -34,7 +34,7 @@ I koden begyndte vi først at designe vores UI, hvor vi designede og tilføjede 
 Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og svar under vores data-sæt (dictionary).
 
 ## 4. Beskrivelse af brugergrænsefladen.
-Flowdiagrammet nedenfor illustrerer brugergrænsefladen. Start/slut-punkterne er markeret med lilla cirkler. Brugerens valgmuligheder er repræsenteret af blå diamanter, hvor brugeren kan interagere ved at klikke på de knapper, der er angivet ved siden af med pile, som viser hvor de fører hentil. Den grønne proces er skjult for forbrugeren og anvendes til at illustrere, forskellige udfald afhængigt af om de har angivet det rigtige eller forkerte. Brugeren har mulighed for at afslutte programmet når som helst ved at bruge 'Alt+F4' eller lukkeknappen i øverste højre hjørne, hvis de foretrækker det frem for appens indbyggede afslutningsknap.
+Flowdiagrammet nedenfor illustrerer brugergrænsefladen. Start/slut-punkterne er markeret med lilla cirkler. Brugerens valgmuligheder er repræsenteret af blå diamanter, hvor brugeren kan interagere ved at klikke på de knapper, der er angivet ved siden af med pile, som viser hvor de fører hentil. Den grønne proces er skjult for forbrugeren og anvendes til at illustrere, forskellige udfald afhængigt af om de har angivet det rigtige eller forkerte. Brugeren har mulighed for at afslutte programmet når som helst ved at bruge 'Alt+F4' eller lukkeknappen i øverste højre hjørne, hvis de foretrækker det frem for appens indbyggede afslutningsknap:
 
 ```mermaid
 graph LR
