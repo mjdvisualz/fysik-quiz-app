@@ -23,6 +23,7 @@ graph LR
     E --> G[SI-Enheder]
     E --> H[SI-Præfikser]
     E --> I[Tilbage]
+    I --> B
 
 ```
 
