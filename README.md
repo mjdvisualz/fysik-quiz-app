@@ -21,6 +21,11 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 | Initialisering af emnevalg | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> </ol> | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
-| Initialisering af quizzen | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> <li> Klik på enten 'Uendelig' eller 'Hardcore' </li> </ol> | Quizzen vises, med et spørgsmål øverst, under er 4 knapper med svar muligheder og nederst er en 'tjek svar' knap. Under står din score. Hvis du har valgt spilmoden 'uendelig' er der en knap 'afslut quiz' |
+| Initialisering af quizzen | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> <li> Klik på enten 'Uendelig' eller 'Hardcore' </li> </ol> | Quizzen vises, med et spørgsmål øverst, under er 4 knapper med svar muligheder og nederst er en 'tjek svar' knap. Under står din score. Hvis du har valgt spilmoden 'uendelig' er der en knap 'afslut quiz' | Resultat |
+| Ved rigtigt svar i uendelig spilmode | Path | Forventet | Resultat |
+| Ved forkert svar i uendelig spilmode | Path | Forventet | Resultat |
+| Ved rigtigt svar i hardcore spilmode | Path | Forventet | Resultat |
+| Ved forkert svar i hardcore spilmode | Path | Forventet | Resultat |
+
 
 ## 6. Reflektion over brugen af deisgn pattern
