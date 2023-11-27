@@ -28,7 +28,7 @@ classDiagram
 ```
 
 ## 3. Beskrivelse af udviklingsprocessen
-Vi startede med at brainstom en masse idéer, om hvad vi ville lave en app til, hvor vi meget hurtigt fandt ud af, at vi ville lave en fysik app. Vi tænkte derefetr på, hvilke emner inden for fysik, som vi ville basere vores app på, og da tænkte vi på det mest simple og mest brugte i fysik, som er SI-enheder og Præfikser. Vi overvejede også at implementere symboler, men mange af de samme symboler bruges til flere forskellige ting, så vi holdte det bare til de to valgte. 
+Vi startede med at brainstom en masse idéer, om hvad vi ville lave en app til, hvor vi meget hurtigt fandt ud af, at vi ville lave en fysik app. Vi tænkte derefter på, hvilke emner inden for fysik, som vi ville basere vores app på, og da tænkte vi på det mest simple og mest brugte i fysik, som er SI-enheder og Præfikser. Vi overvejede også at implementere symboler, men mange af de samme symboler bruges til flere forskellige ting, så vi holdte det bare til de to valgte. 
 Inden vi gang i gang med koden og "UI", så skitserede vi, hvordan vores UI skulle være. Vi valgte antal menuer, svarmuligheder, 
 I koden begyndte vi først at designe vores UI, hvor vi designede og tilføjede vores "Tkinter labels" og "Tkinter buttons". Vi implementerede derefter forskellige metoder og klasser for at forbedre koden og gøre den mere anvendelig.
 Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og svar under vores data-sæt (dictionary).
@@ -51,7 +51,7 @@ graph LR
     B --> |Start| C{Emnevalg}
     B --> |Quit| D((Slut)) 
     C --> |SI-Enheder| E{Spilmode}
-    C --> |SI-Præfikser| E
+    C --> |Præfikser| E
     C --> |Tilbage| B
     E --> |Uendelig| F{Quiz spillet}
     E --> |Hardcore| F
@@ -69,10 +69,10 @@ graph LR
 | ----------- | ----------- | ----------- | ----------- | 
 | Initialisering af hovedmenuen | <ol> <li> Lav en instans af quiz appen </li> </ol> | Hovedmenuen med en 'start' og 'quit' knap vises | Som forventet |
 | Afslutning af quiz | <ol> <li> Lav en instans af quiz appen. </li> <li> Klik på knappen 'quit'. | Quiz appen afsluttes | Som forventet |
-| Initialisering af emnevalg | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> </ol> | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Som forventet |
-| Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Som forventet |
-| Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Som forventet |
-| Initialisering af quizzen | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> <li> Klik på enten 'Uendelig' eller 'Hardcore' </li> </ol> | Quizzen vises, med et spørgsmål øverst, under er 4 knapper med svar muligheder og nederst er en 'tjek svar' knap. Under står din score. Hvis du har valgt spilmoden 'uendelig' er der en knap 'afslut quiz' | Som forventet |
+| Initialisering af emnevalg | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> </ol> | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'Præfikser' og 'Tilbage' | Som forventet |
+| Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'Præfikser' </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Som forventet |
+| Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'Præfikser' </li> </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Som forventet |
+| Initialisering af quizzen | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'Præfikser' </li> <li> Klik på enten 'Uendelig' eller 'Hardcore' </li> </ol> | Quizzen vises, med et spørgsmål øverst, under er 4 knapper med svar muligheder og nederst er en 'tjek svar' knap. Under står din score. Hvis du har valgt spilmoden 'uendelig' er der en knap 'afslut quiz' | Som forventet |
 | Ved rigtigt svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Tjek svar knappen bliver grøn, der bliver tilføjet adderet 1 til din score, og der kommer et nyt spørgsmål og svar muligheder | Som forventet |
 | Ved forkert svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og der kommer et nyt spørgsmål og svar muligheder | Som forventet |
 | Ved rigtigt svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Tjek svar knappen bliver grøn, der bliver tilføjet adderet 1 til din score og der kommer et nyt spørgsmål og svar muligheder | Som forventet |
@@ -82,3 +82,4 @@ graph LR
 
 
 ## 6. Reflektion over brugen af design pattern
+I dette projekt anvendte vi Command-mønstret som er under katagori af adfærdsmæssige designmønstre. Fordelen ved anvendelsen af dette er det er nemt og hurtigt at tilføje flere måder at udføre samme handling på, i programmet kan man tjekke svaret på to måder, ved at klikke på knappen 'Tjek svar' eller ved at klikke på tastatur knappen 'Enter'. Havde vi mere tid i projektet, kunne vi tilføje muligheden for at klikke på tasterne 1-4, for at vælge 1 af de 4 svar muligheder.
