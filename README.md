@@ -38,4 +38,4 @@ graph LR
 | Ved klik på 'afslut quiz' | <ol> <li> Følg trinene i 'Initialiserings af spilmode', sørg for at vælge uendelig mode. </li> <li> Klik på 'afslut quiz' </li> </ol> | Din score vises, under ses en knap 'tilbage til menu'| Resultat |
 
 
-## 6. Reflektion over brugen af deisgn pattern
+## 6. Reflektion over brugen af design pattern
