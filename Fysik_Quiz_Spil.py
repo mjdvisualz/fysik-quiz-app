@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 import random
+from abc import ABC, abstractmethod
 
 # Klasse til at repræsentere et datasæt
 class DataSet:
@@ -89,16 +90,17 @@ Prefix_Data = DataSet(
 Data = [SI_Data, Prefix_Data]
 
 # Abstrakt klasse til at repræsentere en kommando
-class Command:
+class Command(ABC):
+    @abstractmethod
     def execute(self):
-        raise NotImplementedError("Du skal implementere denne metode!") # Fejlhåndtering
+        pass
 
 # Klasse til at repræsentere en kommando til at vælge et svar
 class SelectAnswerCommand(Command):
     def __init__(self, app, answer):
         self.app = app
         self.answer = answer
-
+    
     def execute(self):
         self.app.select_answer(self.answer)
 
