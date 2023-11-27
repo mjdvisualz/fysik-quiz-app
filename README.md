@@ -19,6 +19,6 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 | ----------- | ----------- | ----------- | ----------- | 
 | Initialisering af quiz App | <ol> <li> Lav en instans af quiz appen </li> </ol> | Hovedmenuen med en 'start' og 'quit' knap vises | Resultat |
 | Initialisering af emnevalg | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> </ol> | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Resultat |
-| Initialisering af spilmode | Lav en instans af quiz appen | Hovedmenuen med en 'start' og 'quit' knap vises| Resultat |
+| Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </ol> | Hovedmenuen med en 'start' og 'quit' knap vises| Resultat |
 
 ## 6. Reflektion over brugen af deisgn pattern
