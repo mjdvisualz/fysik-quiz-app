@@ -16,31 +16,29 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ```mermaid
 graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#9cf,stroke:#333,stroke-width:2px
     style C fill:#9cf,stroke:#333,stroke-width:2px
-    style D fill:#ff9,stroke:#333,stroke-width:2px
+    style E fill:#9cf,stroke:#333,stroke-width:2px
     style F fill:#9cf,stroke:#333,stroke-width:2px
-    style G fill:#9cf,stroke:#333,stroke-width:2px
-    style H fill:#ff9,stroke:#333,stroke-width:2px
-    style I fill:#9cf,stroke:#333,stroke-width:2px
+    style G fill:#ff9,stroke:#333,stroke-width:2px
+    style H fill:#9cf,stroke:#333,stroke-width:2px
 
     A((Start)) --> B{Hovedmenu}
-    B -->|Start| C{Emnevalg}
-    B -->|Quit| D[Quizzen afsluttes]
-    D --> E((End))
-    C --> |SI-Enheder| F{Spilmode}
-    C --> |SI-Præfikser| F
+    B --> |Start| C{Emnevalg}
+    B --> |Quit| D((End)) 
+    C --> |SI-Enheder| E{Spilmode}
+    C --> |SI-Præfikser| E
     C --> |Tilbage| B
-    F --> |Uendelig| G{Quiz spillet}
-    F --> |Hardcore| G
-    F --> |Tilbage| C
-    G --> |Tjek svar| H[Validering]
-    G --> |Afslut quiz, hvis spilmode uendelig| I{Resultat}
-    H --> |Hvis rigtigt| G
-    H --> |Hvis forkert & spilmode uendelig| G
-    H --> |Hvis forkert & spilmode hardcore| I
-    I --> |Tilbage til menu| B
+    E --> |Uendelig| F{Quiz spillet}
+    E --> |Hardcore| F
+    E --> |Tilbage| C
+    F --> |Tjek svar| G[Validering]
+    F --> |Afslut quiz, hvis spilmode uendelig| H{Resultat}
+    G --> |Hvis rigtigt| F
+    G --> |Hvis forkert & spilmode uendelig| F
+    G --> |Hvis forkert & spilmode hardcore| H
+    H --> |Tilbage til menu| B
 ```
 
 ## 5. Et skema med test.
