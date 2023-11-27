@@ -34,6 +34,8 @@ graph LR
 | Ved forkert svar i uendelig spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge uendelig mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og der kommer et nyt spørgsmål og svar muligheder | Resultat |
 | Ved rigtigt svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet korrelt </li> </ol> | Tjek svar knappen bliver grøn, der bliver tilføjet adderet 1 til din score og der kommer et nyt spørgsmål og svar muligheder | Resultat |
 | Ved forkert svar i hardcore spilmode | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og efterfølgende vises dit resultat, med en knap 'tilbage til menu'| Resultat |
-| Ved klik på tilbage til hovedmenu | <ol> <li> Følg trinene i 'Initialisering af quizzen', sørg for at vælge hardcore mode. </li> <li> Besvar spørgsmålet forkert </li> </ol> | Tjek svar knappen bliver rød, og efterfølgende vises dit resultat, med en knap 'tilbage til menu'| Resultat |
+| Ved klik på 'tilbage til menu' | <ol> <li> Følg trinene i 'Ved forkert svar i hardcore spilmode'. </li> <li> Klik på 'tilbage til menu' </li> </ol> | Du bringes tilbage til hovedmenuen| Resultat |
+| Ved klik på 'afslut quiz' | <ol> <li> Følg trinene i 'Initialiserings af spilmode', sørg for at vælge uendelig mode. </li> <li> Klik på 'afslut quiz' </li> </ol> | Din score vises, under ses en knap 'tilbage til menu'| Resultat |
+
 
 ## 6. Reflektion over brugen af deisgn pattern
