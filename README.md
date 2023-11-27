@@ -1,4 +1,4 @@
-# fysik-quiz-app
+# Fysik-quiz-app
 ## 1. Beskrivelse af Projektets Formål og Målgruppe
 Formålet med denne applikation er at tilbyde gymnasieelever en nem og tilgængelig måde at øve og forstå SI-enheder og SI-præfikser på. Målgruppen er gymnasieelever, der tager fysik som et fag, og som søger en interaktiv metode til at styrke deres kendskab til dette essentielle område inden for fysik. Appen er designet til at være intuitiv, hvilket gør den ideel for elever, der ønsker en hurtig og effektiv læringsressource.
 
@@ -26,9 +26,10 @@ graph LR
     F --> |Hardcore| G
     F --> |Tilbage| C
     G --> |Tjek svar| H[Validering]
+    G --> |Afslut quiz, hvis spilmode uendelig| I{Resultat}
     H --> |Hvis rigtigt| G
     H --> |Hvis forkert & spilmode uendelig| G
-    H --> |Hvis forkert & spilmode hardcore| I{Resultat}
+    H --> |Hvis forkert & spilmode hardcore| I
     I --> |Tilbage til menu| B
     
 
