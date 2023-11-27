@@ -6,6 +6,27 @@ Formålet med denne applikation er at tilbyde gymnasieelever en nem og tilgænge
 Vi har valgt at benytte os af Command-mønstret, som er en del af de adfærdsmæssige designmønstre. Dette mønster er særligt effektivt til at håndtere funktionskald og operationer, hvilket gør det ideelt til en app, der kræver interaktivitet og responsivitet. Ved at anvende dette mønster, har vi øget appens modulære natur og gjort det lettere at vedligeholde og udvide funktionaliteten over tid.
 Læs mere om mønstret her: https://refactoring.guru/design-patterns/command
 
+Klassediagrammet nedenfor illustere Command-mønstret
+```mermaid
+classDiagram
+    class Command {
+        <<abstract>>
+        +execute()
+    }
+    class SelectAnswerCommand {
+        -app
+        -answer
+        +execute()
+    }
+    class CheckAnswerCommand {
+        -app
+        +execute()
+    }
+
+    Command <|-- SelectAnswerCommand
+    Command <|-- CheckAnswerCommand
+```
+
 ## 3. Beskrivelse af udviklingsprocessen
 Vi startede med at brainstom en masse idéer, om hvad vi ville lave en app til, hvor vi meget hurtigt fandt ud af, at vi ville lave en fysik app. Vi tænkte derefetr på, hvilke emner inden for fysik, som vi ville basere vores app på, og da tænkte vi på det mest simple og mest brugte i fysik, som er SI-enheder og Præfikser. Vi overvejede også at implementere symboler, men mange af de samme symboler bruges til flere forskellige ting, så vi holdte det bare til de to valgte. 
 Inden vi gang i gang med koden og "UI", så skitserede vi, hvordan vores UI skulle være. Vi valgte antal menuer, svarmuligheder, 
