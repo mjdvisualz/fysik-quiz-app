@@ -26,6 +26,7 @@ graph LR
 | Titel | Test trin | Forventet resultat | Aktuelle resultat |
 | ----------- | ----------- | ----------- | ----------- | 
 | Initialisering af hovedmenuen | <ol> <li> Lav en instans af quiz appen </li> </ol> | Hovedmenuen med en 'start' og 'quit' knap vises | Resultat |
+| Afslutning af quiz | <ol> <li> Lav en instans af quiz appen. </li> <li> Klik på knappen 'quit'. | Quiz appen afsluttes | Resultat |
 | Initialisering af emnevalg | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> </ol> | Emnevalgs menuen vises med 3 knapper 'SI-Enheder', 'SI-Præfikser' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
 | Initialisering af spilmode | <ol> <li> Lav en instans af quiz appen </li> <li> Klik på knappen 'start' </li> <li> Klik på enten 'SI-Enheder' eller 'SI-Præfikser' </li> </ol> | Valg af spilmod vises med 3 knapper 'Uendelig', 'Hardcore' og 'Tilbage' | Resultat |
