@@ -15,13 +15,15 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ## 4. Beskrivelse af brugergrænsefladen.
 ```mermaid
 graph LR
-    A((Start)) --> B{Decision}
+    A((Start)) --> B{Hovedmenu}
     B -->|Start| C[Do Something]
     B -->|Quiz| D[Quizzen afsluttes]
-    C --> E{Decision}
+    C --> E{Emnevalg}
     D --> F((End))
     E --> G[SI-Enheder]
     E --> H[SI-Præfikser]
+    G --> J{Spilmode}
+    H --> J
     E --> I[Tilbage]
     I --> B
 
