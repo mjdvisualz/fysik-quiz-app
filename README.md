@@ -16,16 +16,12 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ```mermaid
 graph LR
     A((Start)) --> B{Hovedmenu}
-    B -->|Start| C[Do Something]
+    B -->|Start| C{Emnevalg}
     B -->|Quiz| D[Quizzen afsluttes]
-    C --> E{Emnevalg}
-    D --> F((End))
-    E --> G[SI-Enheder]
-    E --> H[SI-Præfikser]
-    G --> J{Spilmode}
-    H --> J
-    E --> I[Tilbage]
-    I --> B
+    D --> E((End))
+    C --> |SI-Enheder| F{Spilmode}
+    C --> |SI-Præfikser| F
+    C --> |Tilbage| B
 
 ```
 
