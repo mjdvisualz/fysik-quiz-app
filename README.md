@@ -15,5 +15,9 @@ Vi har også lavet koden, så man nemt kan tilføje et ekstar spørgsmål og sva
 ## 4. Beskrivelse af brugergrænsefladen.
 
 ## 5. Et skema med test.
+| Syntax | Description | 
+| ----------- | ----------- | 
+| Header | Title |
+| Paragraph | Text | 
 
 ## 6. Reflektion over brugen af deisgn pattern
