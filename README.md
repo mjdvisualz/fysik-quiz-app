@@ -25,6 +25,12 @@ graph LR
     F --> |Uendelig| G{Quiz spillet}
     F --> |Hardcore| G
     F --> |Tilbage| C
+    G --> |Tjek svar| H[Validering]
+    H --> |Hvis rigtigt| G
+    H --> |Hvis forkert & spilmode uendelig| G
+    H --> |Hvis forkert & spilmode hardcore| I{Resultat}
+    I --> |Tilbage til menu| B
+    
 
 ```
 
